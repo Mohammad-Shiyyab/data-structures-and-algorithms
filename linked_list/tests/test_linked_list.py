@@ -68,7 +68,6 @@ def test_linked_list_to_string(linked_list):
     assert actual == expected
 
 
-
 def test_linked_list_append_one():
     actual = LinkedList()
     actual.append(1)
