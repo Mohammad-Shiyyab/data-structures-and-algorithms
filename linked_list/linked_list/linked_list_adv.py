@@ -45,7 +45,7 @@ class LinkedList(Generic[T]):
         self.head = new_node
         self.length += 1
 
-    def includes(self, value: T) :
+    def includes(self, value) :
         for node in self:
             if node.value == value:
                 return True
@@ -62,7 +62,7 @@ class LinkedList(Generic[T]):
         for value in values:
             self.insert(value)
 
-    def append(self, value: T):
+    def append(self, value):
         new_node = Node(value)
         if (self.head is None):
             self.head = new_node
@@ -75,7 +75,7 @@ class LinkedList(Generic[T]):
         curr.next = new_node
         self.length += 1
 
-    def delete(self, value: T):
+    def delete(self, value):
         curr = self.head
         prev = None
 
