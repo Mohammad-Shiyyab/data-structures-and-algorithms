@@ -27,10 +27,8 @@ def test_linked_list_insert():
     assert actual.head.value == excepted
 
 
-
-
-
 def test_linked_list_length(linked_list):
+    
     actual = linked_list.length
     expected = 3
     assert actual == expected
@@ -66,10 +64,58 @@ def test_linked_list_to_string(linked_list):
     assert actual == expected
 
 
+def test_linked_list_append_one():
+    actual = LinkedList()
+    actual.append(1)
+    expected = 1
+    assert actual.head is not None
+    assert actual.head.value == expected
+
+def test_linked_list_append_multiple():
+    actual = LinkedList()
+    actual.append(1)
+    actual.append(2)
+    actual.append(3)
+    expected = "{ 1 } -> { 2 } -> { 3 } -> NONE"
+    assert actual.to_string() == expected
+
+def test_insert_after_head(linked_list):
+    linked_list.insert_after(3,6)
+    expected="{ 3 } -> { 6 } -> { 2 } -> { 1 } -> NONE"
+    assert str(linked_list) == expected
+
+def test_insert_after_middle(linked_list):
+    linked_list.insert_after(2,6)
+    expected="{ 3 } -> { 2 } -> { 6 } -> { 1 } -> NONE"
+    assert str(linked_list) == expected
+ 
+
+def test_insert_after_end(linked_list):
+    linked_list.insert_after(1,6)
+    expected="{ 3 } -> { 2 } -> { 1 } -> { 6 } -> NONE"
+    assert str(linked_list) == expected
+
+def test_insert_after_end(linked_list):
+    try:
+        linke_list.insert_after(8,1)
+    except:
+        assert True    
+
+def test_insert_before_head(linked_list):
+    linked_list.insert_before(3, 9)
+    expected = "{ 9 } -> { 3 } -> { 2 } -> { 1 } -> NONE"
+    assert str(linked_list) == expected
 
 
 
+def test_insert_before_middle(linked_list):
+    linked_list.insert_before(2, 9)
+    expected = "{ 3 } -> { 9 } -> { 2 } -> { 1 } -> NONE"
+    assert str(linked_list) == expected
+    
 
 
-
-
+def test_insert_before_end(linked_list):
+    linked_list.insert_before(1, 9)
+    expected = "{ 3 } -> { 2 } -> { 9 } -> { 1 } -> NONE"
+    assert str(linked_list) == expected
