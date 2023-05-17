@@ -11,7 +11,7 @@ def linked_list():
     linked_list.insert(3)
    
     return linked_list
-
+    
 
 def test_linked_list():
     actual = LinkedList()
@@ -97,7 +97,7 @@ def test_insert_after_end(linked_list):
 
 def test_insert_after_end(linked_list):
     try:
-        linke_list.insert_after(8,1)
+        linked_list.insert_after(8,1)
     except:
         assert True    
 
@@ -119,3 +119,29 @@ def test_insert_before_end(linked_list):
     linked_list.insert_before(1, 9)
     expected = "{ 3 } -> { 2 } -> { 9 } -> { 1 } -> NONE"
     assert str(linked_list) == expected
+
+
+def test_kth_from_end_():
+    linked_list = LinkedList()
+    linked_list.insert(2)
+    linked_list.insert(8)
+    linked_list.insert(3)
+    linked_list.insert(1)
+    print(linked_list)
+    actual = linked_list.kth_from_end(k=0)
+    expected=2
+    assert actual == expected
+    
+def test_kth_from_end_out_the_rage():
+    linked_list = LinkedList()
+    linked_list.insert(2)
+    linked_list.insert(8)
+    linked_list.insert(3)
+    linked_list.insert(1)
+
+    try:
+       
+       linked_list.kth_from_end(6)  
+    except:
+        assert True 
+

@@ -90,3 +90,27 @@ class LinkedList:
             curr = curr.next
         output += "NONE"
         return output
+    
+    def kth_from_end(self,k):
+
+        if k < 0 :
+            raise IndexError ("Enter positive index")
+        
+        if k > self.length:
+            raise IndexError ("index out the range")
+
+        index= self.length - k -1
+        curr=self.head
+        while curr is not None :
+            if index ==0:
+                return curr.value
+            index -=1
+            curr =curr.next
+
+
+    
+    
+        
+        
+
+
