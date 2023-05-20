@@ -8,7 +8,7 @@ Create linked-list that has the following methods:
 
 
 
-# Class 6
+# Class 7
 
 Write the following methods for the Linked List class:
 
@@ -23,3 +23,6 @@ arguments: value, new value adds a new node with the given new value immediately
 - insert after
 
 arguments: value, new value adds a new node with the given new value immediately after the first node that has the value specified
+
+- linked-list-kth:
+ argument: a number, k, as a parameter ,Return the node’s value that is k places from the tail of the linked list,You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.

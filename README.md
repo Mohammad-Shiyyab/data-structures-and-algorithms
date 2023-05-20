@@ -7,3 +7,4 @@
 | Code-Challenge 3  | [array_binary_search](array_binary_search/READEME.md)
 | Code-Challenge 5  | [array_linked--list](array_linked--list/READEME.md)
 | Code-Challenge 6  | [array_linked-list-insertions](array_linked-list-insertions/READEME.md)
+| Code-Challenge 7  | [array_linked-list-kth](array_linked-list-kth/READEME.md)
