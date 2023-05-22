@@ -143,6 +143,7 @@ def test_kth_from_end_out_the_rage():
        
        linked_list.kth_from_end(6)  
     except:
+        
         assert True 
 
 
@@ -188,7 +189,6 @@ def test_zip_lists_two_longer():
 
     actual = LinkedList.zip_lists(linked_list_one, linked_list_two)
     expected = "{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 4 } -> NONE"
-
     assert str(actual) == expected
 
 

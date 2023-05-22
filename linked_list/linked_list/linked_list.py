@@ -1,4 +1,3 @@
-
 class Node:
 
     def __init__(self, value):
@@ -108,9 +107,8 @@ class LinkedList:
             curr =curr.next
 
 
-    
     def zip_lists(list1, list2):
-       
+    
         if list1.head is None:
             return list2
         if list2.head is None:
@@ -122,10 +120,8 @@ class LinkedList:
         while curr1 is not None and curr2 is not None:
             next1 = curr1.next
             next2 = curr2.next
-
             curr1.next = curr2
-            curr2.next = next1 or next2
-
+            curr2.next = next1 or next
             curr1 = next1
             curr2 = next2
 
