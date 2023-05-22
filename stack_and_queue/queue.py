@@ -24,7 +24,7 @@ class Queue:
 
     def dequeue(self):
         if self.front is None:
-            raise IndexError("Empty Queue")
+            raise Exception("Empty Queue")
 
         curr = self.front
         if (self.front == self.back):
@@ -37,7 +37,7 @@ class Queue:
 
     def peek(self):
         if self.front is None:
-            raise IndexError("Empty Queue")
+            raise Exception("Empty Queue")
         
         return self.front.value
     

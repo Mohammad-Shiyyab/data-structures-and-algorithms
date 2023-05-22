@@ -145,3 +145,72 @@ def test_kth_from_end_out_the_rage():
     except:
         assert True 
 
+
+
+
+def test_zip_lists():
+    linked_list_one = LinkedList()
+    linked_list_one.append(1)
+    linked_list_one.append(3)
+    linked_list_one.append(2)
+    linked_list_two = LinkedList()
+    linked_list_two.append(5)
+    linked_list_two.append(9)
+    linked_list_two.append(4)
+
+    actual = LinkedList.zip_lists(linked_list_one, linked_list_two)
+    expected = "{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> NONE"
+    assert str(actual) == expected
+
+
+def test_zip_lists_one_longer():
+    linked_list_one = LinkedList()
+    linked_list_one.append(1)
+    linked_list_one.append(3)
+    linked_list_one.append(2)
+    linked_list_two = LinkedList()
+    linked_list_two.append(5)
+    linked_list_two.append(9)
+
+    actual = LinkedList.zip_lists(linked_list_one, linked_list_two)
+    expected = "{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> NONE"
+    assert str(actual) == expected
+
+
+def test_zip_lists_two_longer():
+    linked_list_one = LinkedList()
+    linked_list_one.append(1)
+    linked_list_one.append(3)
+    linked_list_two = LinkedList()
+    linked_list_two.append(5)
+    linked_list_two.append(9)
+    linked_list_two.append(4)
+
+    actual = LinkedList.zip_lists(linked_list_one, linked_list_two)
+    expected = "{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 4 } -> NONE"
+
+    assert str(actual) == expected
+
+
+def test_zip_lists_one_empty():
+    linked_list_one = LinkedList()
+    linked_list_two = LinkedList()
+    linked_list_two.append(5)
+    linked_list_two.append(9)
+    linked_list_two.append(4)
+
+    actual = LinkedList.zip_lists(linked_list_one, linked_list_two)
+    expected = "{ 5 } -> { 9 } -> { 4 } -> NONE"
+    assert str(actual) == expected
+
+
+def test_zip_lists_two_empty():
+    linked_list_one = LinkedList()
+    linked_list_one.append(1)
+    linked_list_one.append(3)
+    linked_list_one.append(2)
+    linked_list_two = LinkedList()
+
+    actual = LinkedList.zip_lists(linked_list_one, linked_list_two)
+    expected = "{ 1 } -> { 3 } -> { 2 } -> NONE"
+    assert str(actual) == expected

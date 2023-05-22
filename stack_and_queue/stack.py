@@ -30,7 +30,7 @@ class Stack():
     def peek(self):
         
         if self.top is None:
-            raise IndexError("Cannot peek at an empty stack")
+            raise Exception("Cannot peek at an empty stack")
         return self.top.value
 
 
