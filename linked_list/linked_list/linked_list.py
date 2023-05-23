@@ -121,7 +121,7 @@ class LinkedList:
             next1 = curr1.next
             next2 = curr2.next
             curr1.next = curr2
-            curr2.next = next1 or next
+            curr2.next = next1 or next2
             curr1 = next1
             curr2 = next2
 
