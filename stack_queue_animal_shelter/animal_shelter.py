@@ -5,12 +5,12 @@ from stack_queue_animal_shelter.animal import Animal, Cat, Dog
 class AnimalShelter:
     
     def __init__(self):
-        self.animals: list[Animal] = []
+        self.animals = []
 
-    def enqueue(self, animal: Animal):
+    def enqueue(self, animal):
         if isinstance(animal, (Dog, Cat)):
             self.animals.append(animal)
-            
+
         else:
             raise TypeError("Animal must be a Dog or Cat")
 
@@ -24,3 +24,4 @@ class AnimalShelter:
                 return self.animals.pop(i)
 
         return None
+

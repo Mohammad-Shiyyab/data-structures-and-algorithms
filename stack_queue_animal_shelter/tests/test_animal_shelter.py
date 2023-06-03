@@ -60,3 +60,4 @@ def test_dequeue_all_animal(shelter):
     assert shelter.dequeue('cat') is None
     assert shelter.dequeue('dog') is None
     assert shelter.dequeue() is None
+
