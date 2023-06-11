@@ -1,4 +1,6 @@
-from data_struct import Node,Queue,Stack
+from Trees.data_struct import Node,Queue,Stack
+
+
 class Tnode:
   def __init__(self,value):
     self.value=value
@@ -81,13 +83,15 @@ class Tree:
     output=[]
 
     def _walk(root):
-      if root.left:
-        _walk(root.left)
+        #left
+        if root.left:
+          _walk(root.left)
 
-      if root.right:
-        _walk=root.right
+        #right
+        if root.right:
+          _walk(root.right)
 
-      output.append(root.value)
+        output.append(root.value)
 
 
     _walk(self.root)
@@ -135,9 +139,9 @@ class BinarySearchTree(Tree):
         return _search(node.left,value)
 
       else:
-        _search(node.right,value)
+        return _search(node.right,value)
 
-
+    return _search(self.root,value)
 
 if __name__ == "__main__":
 
