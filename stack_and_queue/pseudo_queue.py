@@ -11,9 +11,20 @@ class PseudoQueue:
 
     def dequeue(self):
         if (self.stack1.is_empty() and self.stack2.is_empty()):
-            raise IndexError('Queue is empty')
+            raise Exception('Queue is empty')
 
         if self.stack2.is_empty():
             while not self.stack1.is_empty():
                 self.stack2.push(self.stack1.pop())
         return self.stack2.pop()
+    
+
+
+
+
+
+
+
+
+
+

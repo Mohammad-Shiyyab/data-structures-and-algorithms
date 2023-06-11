@@ -20,5 +20,5 @@ def test_pseudo_queue_happy_path():
 
 def test_pseudo_queue_empty():
     queue = PseudoQueue()
-    with pytest.raises(IndexError):
+    with pytest.raises(Exception):
         queue.dequeue()
