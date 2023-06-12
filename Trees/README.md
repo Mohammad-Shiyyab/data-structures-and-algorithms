@@ -17,6 +17,12 @@ create tow classes 1- Binary Tree with 3 methods:
 - contains: check if the value is in the tree or not
 ```
 
+# class 16
+
+- find maximum value in binary tree
+    -arguments: none
+    -return: maximum value in the tree
+
 ## Code
 
 - <a href="#trees.py">trees</a>

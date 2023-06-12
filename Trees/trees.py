@@ -99,6 +99,17 @@ class Tree:
   
 
 
+  def max_value(self) :
+        """Returns the maximum value in the tree."""
+        if self._root is None:
+            raise ValueError("Tree is empty")
+        max_value = self._root.value
+        for v in self:
+            if v > max_value:  
+                max_value = v
+        return max_value
+
+  
 class BinarySearchTree(Tree):
   def __init__(self):
     super().__init__()
