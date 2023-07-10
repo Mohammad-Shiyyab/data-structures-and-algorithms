@@ -113,8 +113,27 @@ class Tree:
         max_value=self._max_value(node.right,max_value)
         
       return max_value
-    
   
+
+  def sum_odd_numbers(self):
+        return self._sum_odd_numbers_helper(self.root)
+  
+  def _sum_odd_numbers_helper(self, node):
+        if not node:
+            return 0
+
+        sum_odd = 0
+
+        if node.value % 2 != 0:
+            sum_odd += node.value
+
+        sum_odd += self._sum_odd_numbers_helper(node.left)
+        sum_odd += self._sum_odd_numbers_helper(node.right)
+
+        return sum_odd
+  
+
+
   
 class BinarySearchTree(Tree):
   def __init__(self):
