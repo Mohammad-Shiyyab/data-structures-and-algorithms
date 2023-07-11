@@ -13,3 +13,5 @@
 | Code-Challenge 12  | [stack-queue-animal-shelter](stack_queue_animal_shelter/READEME.md)
 | Code-Challenge 13  | [stack_queue_brackets](stack_queue_brackets/READEME.md)
 | Code-Challenge 15  | [Trees](Trees/READEME.md)
+| Code-Challenge 26  | [insertion](insertion/READEME.md)
+
