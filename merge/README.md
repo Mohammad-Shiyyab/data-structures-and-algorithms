@@ -54,3 +54,9 @@ Sample Array: [8,4,23,42,16,15]
 
 Time: O(nlogn)
 Space: O(n)
+
+# Solution
+
+link to the code: <a href="#merge_sort.py">merge_sort</a>
+
+link to the code: <a href="#test_merge_sort.py">test_merge_sort.py</a>
