@@ -11,7 +11,7 @@
 | Code-Challenge 8  | [array_linked-list-zip](array_linked-list-zip/READEME.md)
 | Code-Challenge 11  | [stack-queue-pseudo](stack-queue-pseudo/READEME.md)
 | Code-Challenge 12  | [stack-queue-animal-shelter](stack_queue_animal_shelter/READEME.md)
-| Code-Challenge 13  | [stack_queue_brackets](stack_queue_brackets/READEME.md)
-| Code-Challenge 15  | [Trees](Trees/READEME.md)
-| Code-Challenge 26  | [insertion-sort](insertion/READEME.md)
-
+| Code-Challenge 13  | [stack_queue_brackets](https://github.com/Mohammad-Shiyyab/data-structures-and-algorithms/tree/insertion-sort/stack_queue_brackets)
+| Code-Challenge 15  | [Trees](https://github.com/Mohammad-Shiyyab/data-structures-and-algorithms/blob/insertion-sort/README.md)
+| Code-Challenge 26  | [insertion-sort](https://github.com/Mohammad-Shiyyab/data-structures-and-algorithms/tree/insertion-sort)
+Code-Challenge 26  | [merge](https://github.com/Mohammad-Shiyyab/data-structures-and-algorithms/tree/sorting)
