@@ -18,12 +18,12 @@ def test_hashtable_insert_two():
 
 
 def hatb():
-    hatb = Hashtable()
-    hatb.set('apple', 5)
-    hatb.set('banana', 6)
-    hatb.set('carrot', 7)
+    hs = Hashtable()
+    hs.set('apple', 5)
+    hs.set('banana', 6)
+    hs.set('carrot', 7)
 
-    return hatb
+    return hs
 
 
 def test_hashtable_get_none(hatb):
@@ -52,7 +52,7 @@ def test_hashtable_has_key_false(hatb):
     assert hatb.has('dinosaur') == False
 
 
-def test_hashtable_keys(hatb):
+def test_hashtable_key(hatb):
     expected = ['apple', 'banana', 'carrot']
     actual = hatb.keys()
     expected.sort()
