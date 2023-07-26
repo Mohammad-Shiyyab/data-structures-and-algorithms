@@ -6,7 +6,7 @@ V = TypeVar('V')
 
 
 class Hashtable(Generic[K, V]):
-    def __init__(self, size: int = 100) :
+    def __init__(self, size = 100) :
         self._size: int = size
         self._buckets: list[Optional[list[tuple[K, V]]]] = [None] * size
 

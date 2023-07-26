@@ -1,5 +1,5 @@
 import pytest
-from Trees.trees import BinarySearchTree
+from trees.trees import BinarySearchTree
 
 
 

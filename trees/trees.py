@@ -1,4 +1,4 @@
-from Trees.data_struct import Node,Queue,Stack
+from trees.data_struct import Node,Queue,Stack
 
 
 class Tnode:
