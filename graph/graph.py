@@ -1,5 +1,6 @@
 from typing import  TypeVar
 from .vertex import Vertex
+
 from .edge import Edge
 
 T = TypeVar('T')
