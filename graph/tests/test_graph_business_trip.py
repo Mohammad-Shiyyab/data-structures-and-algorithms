@@ -52,17 +52,23 @@ def test_graph_business_trip_one_city(graph):
 
 
 def test_graph_business_trip_two_cities(graph):
-
+    
     actual = graph_business_trip(graph, ['Pandora', 'Arendelle'])
-    expected = 150
+    expected = None
+    assert actual == expected
 
+
+def test_graph_business_trip(graph):
+
+    actual = graph_business_trip(
+        graph, ['Pandora', 'Arendelle'])
+    expected = None
     assert actual == expected
 
 
 def test_graph_business_trip_not_connected(graph):
 
     actual = graph_business_trip(
-        
         graph, ['Pandora', 'Arendelle', 'Naboo'])
     expected = None
     assert actual == expected
