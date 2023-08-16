@@ -57,6 +57,27 @@ class Graph():
 
         return len(self._adjacency_list)
 
+
+
+
+    def graph_depth(self, root):
+        '''Returns a list of all the vertices in the graph in depth first order'''
+        if root is None:
+            return []
+        visited = set([root])
+        traversed = [root.value]
+
+        def rec(node):
+            neighbors = self.get_neighbors(node)
+            for edge in neighbors:
+                if not edge.vertex in visited:
+                    traversed.append(edge.vertex.value)
+                    visited.add(edge.vertex)
+                    rec(edge.vertex)
+        rec(root)
+        return traversed
+
+
     
     def __str__(self):
         output = '\n'
